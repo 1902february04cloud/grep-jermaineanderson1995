@@ -1,0 +1,34 @@
+#Solutions
+#Jermaine Anderson
+
+#Problem 1
+#grep 'Z' cities.txt
+
+#Problem 2
+#grep 'gan\>' cities.txt
+
+#Problem 3
+#grep '^[ADE]' cities.txt | wc -l
+
+#Problem 4
+#grep '\<.ar' cities.txt | wc -l
+
+#Problem 5
+#grep -v '^C' cities.txt | wc -l
+
+#Problem 6
+#grep -E '[^[:space:]]{14,}' cities.txt
+
+#Problem 7
+#grep '^B' cities.txt | wc -l
+
+#Problem 8
+#grep -o 'd' cities.txt | wc -l
+
+#Problem 9 
+#grep -E '(.)\1\>' cities.txt 
+
+#Problem 10
+#grep -i '\<\(.\)\(.\).\2\1\>' cities.txt
+ 
+
