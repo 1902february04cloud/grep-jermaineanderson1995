@@ -1,34 +1,44 @@
-#Solutions
-#Jermaine Anderson
+Grep - Assignment Solutions
+Jermaine Anderson
 
-#Problem 1
-#grep 'Z' cities.txt
+Problem 1
+-> List the cities that strat with the letter 'Z'
+Solution: grep '^Z' cities.txt
 
-#Problem 2
-#grep 'gan\>' cities.txt
+Problem 2
+-> List the cities that end with the word 'gan'
+Solution: grep 'gan\>' cities.txt
 
-#Problem 3
-#grep '^[ADE]' cities.txt | wc -l
+Problem 3
+-> List the cities that start with 'A', 'D',or 'E'
+Solution: grep '^[ADE]' cities.txt | wc -l
 
-#Problem 4
-#grep '\<.ar' cities.txt | wc -l
+Problem 4
+-> List the cities that have 'a' as their second letter and 'r' as their third letter (consider cities with more than one word)
+Solution: grep '\<.ar' cities.txt | wc -l
 
-#Problem 5
-#grep -v '^C' cities.txt | wc -l
+Problem 5
+-> List the cities that don't start with the letter 'C'
+Solution: grep -v '^C' cities.txt | wc -l
 
-#Problem 6
-#grep -E '[^[:space:]]{14,}' cities.txt
+Problem 6
+-> List the cities that have at least 14 characters (hint: use egrep)
+Solution: grep -E '[^[:space:]]{14,}' cities.txt
 
-#Problem 7
-#grep '^B' cities.txt | wc -l
+Problem 7
+-> Count how many cities start with the letter 'B'
+Solution: grep '^B' cities.txt | wc -l
 
-#Problem 8
-#grep -o 'd' cities.txt | wc -l
+Problem 8
+-> Count how many times the letter 'd' repeats
+Solution: grep -o 'd' cities.txt | wc -l
 
-#Problem 9 
-#grep -E '(.)\1\>' cities.txt 
+Problem 9 
+-> List the cities that end with the same letter twice (hint: use egrep)
+Solution: grep -E '(.)\1\>' cities.txt 
 
-#Problem 10
-#grep -i '\<\(.\)\(.\).\2\1\>' cities.txt
+Problem 10
+-> List the palindrome cities with five characters
+Solution: grep -i '\<\(.\)\(.\).\2\1\>' cities.txt
  
 
